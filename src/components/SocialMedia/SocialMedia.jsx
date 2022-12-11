@@ -1,18 +1,28 @@
 import React from 'react';
-import { BsTwitter, BsInstagram, BsGithub } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+
+
+const socials = [
+  { name: <BsGithub />, url: 'https://github.com/brownfrosamurai' },
+  { name: <BsLinkedin />, url: 'https://www.linkedin.com/in/meduna-femi/' },
+]
 
 const SocialMedia = () => {
   return (
     <div className='app__social'>
-      <div>
-        <BsTwitter />
-      </div>
-      <div>
-        <BsInstagram />
-      </div>
-      <div>
-        <BsGithub />
-      </div>
+      {
+        socials.map((social, index) => (
+          <div key={index}>
+            <a
+              href={social.url}
+              target='_blank'
+              rel='author noreferrer'
+            >
+              {social.name}
+            </a>
+          </div>
+        ))
+      }
     </div>
   )
 }

@@ -7,7 +7,7 @@
 
   padding: 1rem 2rem;
   background: rgba(255,255,255, 0.25);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255,255,255,0.18);
   position: fixed;
@@ -19,23 +19,18 @@
   justify-content: flex-start;
   align-items: center;
 
-  img {
-    width: 90px;
-    height: 20px;
-
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
+  a{
+    text-decoration: none;
+    
+    span {
+      font-size: 1.5rem;
+  
+      @media screen and(min-width: 900px) {
+        font-size: 2.5rem;
+      }
     }
   }
-
-  span {
-    font-size: 1.5rem;
-
-    @media screen and(min-width: 2000px) {
-      font-size: 3rem;
-    }
-  }
+  
 }
 
 .app__navbar-links {

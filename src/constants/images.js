@@ -25,7 +25,10 @@ import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
+import background from '../assets/background.png'
 import logo from '../assets/logo.png';
+import server from '../assets/server.png'
+import programming from '../assets/programming-tree.png'
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -61,6 +64,9 @@ export default {
   about04,
   profile,
   circle,
+  background,
+  programming,
+  server,
   logo,
   adidas,
   amazon,

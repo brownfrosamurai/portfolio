@@ -6,7 +6,7 @@ import { AppWrap } from '../../wrappers';
 import { images } from '../../constants';
 import './Header.scss';
 
-const scaleVariants = {
+export const scaleVariants = {
   whileInView: {
     scale: [0, 1],
     opacity: [0, 1],
