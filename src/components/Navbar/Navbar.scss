@@ -1,5 +1,5 @@
 .app__navbar {
-  width: 100%;
+  width: 100vw;
 
   display: flex;
   justify-content: space-between;
@@ -23,10 +23,10 @@
     text-decoration: none;
     
     span {
-      font-size: 1.5rem;
+      font-size: 1rem;
   
       @media screen and(min-width: 900px) {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
   }

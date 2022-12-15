@@ -55,7 +55,7 @@ const About = () => {
             <motion.div
               className='app__profile-item-modal'
               whileInView={{ y: [300, 0], opacity:[0, 1] }}
-              transition={{ duration: 1, ease: 'easeInOut' }}
+              transition={{ duration: 0.5, ease: 'easeInOut' }}
             >
               <HiX onClick={() => setToggle(false)} />
 

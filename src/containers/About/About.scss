@@ -40,7 +40,7 @@
 
 .app__profile-item-modal {
   width: 80%;
-  height: 65vh;
+  height: 58vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -64,7 +64,9 @@
   }
 
   @media screen and (min-width:2000px) {
-    width: 1100px;
+    width: 900px;
+    height: 50vh;
+
 
     img {
       height: 60%;

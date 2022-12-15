@@ -1,6 +1,7 @@
 .app {
-  background-color: var(--primary-color);
+  // background-color: var(--primary-color);
   font-family: var(--font-base);
+
 }
 
 .app__whitebg {
@@ -33,6 +34,10 @@
 
   @media screen and (max-width: 450px) {
     padding: 4rem 1rem 2rem;
+  }
+
+  @media screen and (max-width: 1600px) {
+    padding: 2rem 1rem 2rem;
   }
 }
 

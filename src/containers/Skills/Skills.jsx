@@ -69,29 +69,15 @@ const Skills = () => {
                 <motion.div className='app__skills-exp-works'>
                   {
                     experience.works.map((work, index) => (
-                      <>
-                        <motion.div
-                          whileInView={{ opacity: [0, 1] }}
-                          transition={{ duration: 0.5, }}
-                          className='app__skills-exp-work'
-                          // data-tooltip-content={work.dec}
-                          // data-for={work.name}
-                          key={index}
-                        >
-                          <h4 className='bold-text'>{work.name}</h4>
-                          <p className='p-text'>{work.company}</p>
-                          {/* <p className='p-text'>{work.desc}</p> */}
-                        </motion.div>
-                        {/* <ReactTooltip
-                          anchorId={work.name}
-                          id={work.name}
-                          effect='solid'
-                          arrowColor='#fff'
-                          className='skills-tooltip'
-                        >
-                          {work.desc}
-                        </ReactTooltip> */}
-                      </>
+                      <motion.div
+                        whileInView={{ opacity: [0, 1] }}
+                        transition={{ duration: 0.5, }}
+                        className='app__skills-exp-work'
+                        key={index}
+                      >
+                        <h4 className='bold-text'>{work.name}</h4>
+                        <p className='p-text'>{work.company}</p>
+                      </motion.div>
                     ))
                   }
                 </motion.div>
@@ -106,4 +92,3 @@ const Skills = () => {
 }
 
 export default AppWrap(MotionWrap(Skills, 'app__skills'), 'skills', 'app__whitebg')
-// export default AppWrap(Skills, 'skills')
